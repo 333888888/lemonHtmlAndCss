@@ -1,0 +1,35 @@
+<style>
+    * {
+        /* 消除标签默认的内外边距 */
+        margin: 0;
+        padding: 0;
+    }
+
+    div > p {
+        /* div对象中的子级p对象被指定样式 */
+        color:red;
+    } 
+
+    #box > p a {
+        /* id为box的对象中的p对象中的a对象被指定样式 */
+        color:blue;
+    } 
+
+    /* 分开设置 */
+    h1{ color: red;}
+    h2{ color: red;}
+    h3{ color: red;}
+    h4{ color: red;}
+    h5{ color: red;}
+    h6{ color: red;}
+
+    /* 群组设置 */
+    h1,h2,h3,h4,h5,h6{ color: red;}
+
+
+    p.redtext.news{
+        /* 具有redtext类和news类的p对象被指定样式 */
+        font-weight: bold;
+    }
+
+</style>

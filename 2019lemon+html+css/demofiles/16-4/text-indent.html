@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首行缩进</title>
+    <style>
+    .p1{
+        width: 600px;
+        border: 10px rebeccapurple solid;
+        margin: 50px auto;
+        /* 针对中文的常见首行空2格的代码操作 */
+        text-indent: 2em; 
+        font-size: 24px;
+    }
+    a{
+        display: inline-block;
+        width: 137px;
+        height: 52px;
+        background: url(login.gif);
+        text-indent: -9999px;
+    }
+    .p2{
+        width: 600px;
+        border: 10px rebeccapurple solid;
+        margin: 50px auto;
+        font-size: 24px;
+        text-indent: -1em;
+        padding-left: 25px;
+        
+    }
+    .p2::first-letter{
+        color: orangered;
+        font-weight: bold;
+        /* font-size: 2em; */
+        /* vertical-align: middle; */
+    }
+    </style>
+</head>
+
+<body>
+        <p class="p2">
+                段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容
+            </p>
+    <p class="p1">
+        段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容段落中的文本内容
+    </p>
+    <a href="#">登录</a>
+</body>
+</html>

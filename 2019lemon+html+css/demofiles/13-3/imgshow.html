@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>网页标题</title>
+    <style>
+        div{
+            width: 120px;
+            height: 120px;
+            border: 10px lightblue solid;
+            margin: 100px auto;
+            /* 
+            需求：1、将其转换成定位对象，以形成子级span的定位参照物
+                2、保持其自身在默认文档流中板块的形象（保留占位）
+             */
+            position: relative;
+        }
+        div > img{
+            display: block;
+            width: 100%;
+        }
+        div > span{
+            background: rgba(0, 0, 0, .6);
+            display: block;
+            width: 120px;
+            height: 120px;
+            /* 
+            需求：1、不保留默认文档流中的占位
+            2、该元素定位控制的参考对象是父级div对象
+             */
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;   /* 透明度为0 ，看不到*/
+            transition: opacity 1s;
+        }
+        div:hover > span{
+            opacity: 1;
+        }
+        div > span a{
+            color: white;
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="pic.png" alt="">
+        <span>
+            <a href="">点击进入</a>
+        </span>
+    </div>
+</body>
+</html>

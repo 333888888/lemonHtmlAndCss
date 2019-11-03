@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>三列：定宽列在前、自适应列在后</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    .left,.right{
+        width: 200px;
+        background: pink;
+        min-height: 300px;
+    }
+    .right{
+        background: seagreen;
+    }
+    .main{
+        min-height: 400px;
+        background: purple;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+    .main{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <aside class="left">left</aside>
+    <aside class="right">right</aside>
+    <div class="main">main</div>
+</body>
+</html>

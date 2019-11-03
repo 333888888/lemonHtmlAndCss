@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>空格和留白</title>
+    <style>
+        /* white-space:是用于对文本中空格的修饰  默认值是normal
+          一般会换行 多个空格保留一个空格
+          一般浏览器会将多个空格合并成一个空格 除非用特殊字符&nbsp;去做多个填充
+          word-break:是将每个单词的字母都打断一般设置成break-all 其他值有keep-all normal
+          overflow:是对子元素溢出父元素边框的操作
+          可以细分为overflow-x 和overflow-y 
+          其中可以设置值为auto hidden scroll visible
+          visible是默认值
+          auto是没有溢出没有滚动条 有溢出才出现滚动条
+          scroll是无论是否溢出都出现滚动条 但是没有溢出不激活滚动条 溢出激活滚动条
+          hidden就是当内容溢出的时候隐藏溢出部分
+          text-overflow是对文本溢出的边框处理
+          可以设置值为clip或ellipsis
+          clip是默认值 将溢出文本裁剪掉不显示
+          ellipsis是用...三个省略号代表溢出文本
+        */
+        p{
+            width: 700px;
+            border: 1px solid red;
+            white-space: nowrap;
+            word-break: break-all;
+            overflow: auto;
+        }
+        p:nth-child(2){
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        p:nth-child(3){
+            white-space: pre-line;
+            word-break: break-all;
+        }
+        p:nth-child(4){
+            white-space: pre;
+            word-break: break-all;
+        }
+        div{
+            width: 500px;
+            margin: 50px auto;
+            background-color: salmon;
+            text-align: justify;
+            text-align-last: justify;
+            /* 单行省略 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        div >a{
+            display: inline-block;
+            font-size: 24px;
+            text-decoration: none;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        第七届世界军人运动会迎来开幕后的首个比赛日，   有16个大项、共34个dfsfdsgfsasdfghjkledfghjklhjxcvbxcvbnghjktyuifghjkvbnmyuloghjktyuighjkyuighj小项的比赛，产生了22枚金牌。截至19日23：00，中国队在射击、柔道、游泳、空军五项、击剑等项目中共获得12枚金牌，总奖牌数22枚，稳居奖牌榜首位，迎来名副其实的“开门红”。
+    </p>
+    <p>
+        在男子25米手枪军事速射团体项目中，八一射击队在      巨大压力下充分展现了威武之师的英雄本色，射落本dfsfdsgfsasdfghjkledfghjklhjxcvbxcvbnghjktyuifghjkvbnmyuloghjktyuidfgdfgdfgdgdgdffgdgdfgfdghjkyuighj届军运会第一块金牌，成功卫冕，也为中国队在本届军运会上赢得了首枚金牌。
+    </p>
+    <p>
+        在男子25米手枪军事速射团体决赛中，八一射击队dfsfdsgfsasdfghjkledfghjklhjxcvbxcvbnghjktyuifghjkvbnmyuloghjktyuighjkyuighj副队长兼教练金泳德领衔的中国队获得团体            冠                                           军                    ,                 获当日首枚金牌。
+    </p>
+    <p>
+        空军五项飞行比赛，中国队以总分第一的成绩，将空军五     项的
+        首块金牌收入囊中，这是中国队在本届军运会上         获得的第二金。dfsfdsgfsasdfghjkledfghjklhjxcvbxcvbnghjktyuifghjkvbnmyuloghjktyuighjkyuighj在低空
+        三角导航飞行比赛中，中国选手廖伟华以3500分的成绩
+        摘得金牌获冠军。  
+    </p>
+    <pre>
+        柔道比赛，中国夺3金2银1铜;女子柔道48
+        公斤级比赛，中国选手陈晨获得冠军，黄丽茹获dfsfdsgfsasdfghjkledfghjklhjxcvbxcvbnghjktyuifghjkvbnmyuloghjktyuighjkyuighj
+        得女子52公
+        斤柔道比赛冠军，唐静获女子63公斤柔道比赛冠军。
+    </pre>
+    <div>
+        <a href="#">关于开发我们</a>
+        <a href="#">联系技术我们</a>
+        <a href="#">产品研发中心</a>
+        <a href="#">技术售后支持</a>
+        <a href="#">优秀案例展示</a>
+    </div>
+</body>
+</html>

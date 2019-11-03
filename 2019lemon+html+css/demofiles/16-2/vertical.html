@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>垂直对齐</title>
+    <style>
+        p{
+            border: 5px gray solid;
+            width: 80vw;
+            margin: 40px auto;
+            /* vertical-align: bottom; */
+        }
+        span,b,time{
+            vertical-align: middle;
+
+        }
+        span{
+            background: yellow;
+            font-size: 1.5em;
+        }
+        b{
+            background-color: pink;
+            font-size: .7em;
+            
+        }
+        time{
+            background-color: greenyellow;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        div{
+            border: 3px red solid;
+        }
+        div img{
+            border: 1px black solid;
+            width: 24px;
+            vertical-align: middle;
+        }
+        div strong{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <span>微组合内容</span>
+        <b>粗体显示</b>
+        <time>2019-07-26</time>
+    </p>
+    <div>
+        <img src="home.jpg" alt="">
+        <strong>若干文本</strong>
+    </div>
+</body>
+</html>

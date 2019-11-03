@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景剪切->文字特效</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+        }
+        div{
+            width: 100%;
+            text-align: center;
+            line-height: 1.8em;
+            font-size: 32px;
+            border: 1px solid red;
+            background-color: #ccc;
+            background-image: url(../img/fire.gif);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center ;
+            background-origin: padding-box;
+            background-size: cover;
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       TOP.1
+    </div>
+</body>
+</html>

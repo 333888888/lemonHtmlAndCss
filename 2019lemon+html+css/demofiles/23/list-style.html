@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>列表样式</title>
+    <style>
+        ul{
+            border: 10px red solid;
+            padding: 50px;
+            /* list-style-type: circle; */
+            /* list-style-image: url(img/video.svg); */
+            /* list-style-position: inside; */
+            list-style: none;
+        }
+        ul li{
+            width: 400px;
+            height: 30px;
+            background-color: yellow;
+        }
+        ol{
+            border: 10px blue solid;
+            margin: 0;
+            padding-left: 0;
+            list-style-type: disc;
+        }
+    dl div{
+        background-color: yellow;
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+
+<body>
+<h1>无序列表：</h1>
+    <ul>
+        <li>list item1</li>
+        <li>list item2</li>
+        <li>list item3</li>
+        <li>list item4</li>
+    </ul>
+<h1>有序列表：</h1>
+<!-- 需求：序号从3开始来排列，倒序排列 -->
+    <ol start="2" reversed>
+        <li>list item1</li>
+        <li>list item2</li>
+        <li>list item3</li>
+        <li>list item4</li>
+    </ol>
+<h1>定义列表：</h1>
+    <dl>
+        <div>
+            <dt>定义标题</dt>
+            <dt>定义标题</dt>
+            <dt>定义标题</dt>
+            <dd>对应标题的表述</dd>
+      </div>
+        <div>
+            <dt>定义标题</dt>
+            <dd>对应标题的表述</dd>
+     </div>
+        <dt>定义标题</dt>
+        <dd>对应标题的表述</dd>
+    </dl>
+
+</body>
+</html>

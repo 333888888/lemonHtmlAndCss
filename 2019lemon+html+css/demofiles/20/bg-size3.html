@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>背景图尺寸控制</title>
+    <style>
+    div{
+        width: 500px;
+        height: 400px;
+        border: 1px red solid;
+        background-image: url(img/1.png);
+        background-repeat: no-repeat;
+        background-size: cover; /* 在完全覆盖容器区域的前提下，图片等比缩放 */
+        background-size: contain; /* 在背景图能完整呈现的前提下，图片等比缩放 */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两端对齐排版:现代和传统</title>
+    <style>
+        /*现代样式*/
+       div {
+            width: 1224px;
+            margin: 0px auto;
+            border: 1px solid red;
+            font-size: 0px;
+            text-align: justify;
+            text-align-last: justify;
+        }
+        div > p{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 0px;
+            padding: 0px;
+            font-size: 14px;
+            background-color: seagreen;
+        }
+        /*传统样式 */
+        section{
+            width: 1224px;
+            margin: 0px auto;
+            border: 1px solid red;
+            font-size: 0px;
+            text-align: justify;
+        }
+        section > p{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 0px;
+            padding: 0px;
+            font-size: 14px;
+            background-color: greenyellow;
+        }
+        section::after{
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+    </div>
+    <section>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+    </section>
+</body>
+</html>

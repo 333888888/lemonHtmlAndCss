@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>显示模式无实现的下拉菜单案例演示</title>
+    <style>
+        .menu{
+            border: 1px gray solid;
+            width: 200px;
+            margin: 100px auto;
+        }
+        .menu > a{
+            background: skyblue;
+            display: block;
+            line-height: 42px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .menu ul{
+            background: yellow;
+            display: none;
+        }
+        .menu > a:hover ~ ul{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#">一级导航</a>
+        <ul>
+           <li>二级菜单A</li> 
+           <li>二级菜单B</li> 
+           <li>二级菜单C</li> 
+           <li>二级菜单D</li> 
+        </ul>
+    </div>
+</body>
+</html>

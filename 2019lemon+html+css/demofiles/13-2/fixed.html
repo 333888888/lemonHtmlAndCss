@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+    <style>
+    .box{
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    body{
+        border: 10px orange solid;
+    }
+    section{
+        background: cyan;
+        min-height: 1600px;
+    }
+    </style>
+</head>
+<!-- 浏览器视口（可视化部分）和body是2个概念，不要混淆 -->
+<body>
+    <section></section>
+    <div class="box">box</div>
+</body>
+</html>

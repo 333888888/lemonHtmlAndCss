@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三列布局</title>
+    <style>
+        header{
+            content: "我是头部";
+            height: 100px;
+            background-color: #ccc;
+        }
+        nav{
+            height: 40px;
+            background-color: #0fc;
+            content: "我是导航栏";
+        }
+        aside{
+            width: 200px;
+            height: 100px;
+            background-color: #118801;
+        }
+        body>aside:first-of-type{
+            float: left;
+        }
+        article{
+            margin: 0px 200px;
+            background-color: #ffa500;
+            height: 300px;
+        }
+        body>aside:last-of-type{
+            float: right;
+        }
+        footer{
+            height: 100px;
+            background-color: #cfc;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <aside></aside>
+    <aside></aside>
+    <article></article>
+    <footer></footer>
+</body>
+</html>

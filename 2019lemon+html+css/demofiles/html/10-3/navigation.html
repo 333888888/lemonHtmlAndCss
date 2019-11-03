@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="copyrights" content="柠檬学院">
+    <title>仿凤凰网横向导航条</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .site-nav{
+            background-color: #f54343;
+            width: 1200px;
+            height: 48px;
+            margin: 50px auto;
+            font-size: 0;
+        }
+        .site-nav > a{
+            color: white;
+            text-decoration: none;
+            background-color: black;
+            font-size: 18px;
+            /* display: block; */
+            display: inline-block;
+            /* inline-block布局方案的一个BUG：受行的字号及行高影响导致元素间有缝隙产生 */
+            width: 20%;
+            height: 100%;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <nav class="site-nav">
+        <a href="http://">资讯</a>
+        <a href="http://">视频</a>
+        <a href="http://">新闻</a>
+        <a href="http://">娱乐</a>
+        <a href="http://">时尚</a>
+    </nav>
+</body>
+</html>

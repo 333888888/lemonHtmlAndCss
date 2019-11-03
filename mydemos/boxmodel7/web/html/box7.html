@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子模型</title>
+    <style type="text/css">
+        /*通配符选择器 选择页面所有元素 内边距和外边距都设置为0*/
+        *{margin:0px;padding:0px;}
+        /*自主选择标签进行初始化*/
+        body,p,dl,dd,h1,h2,h3,h4,h5,h6{margin:0px;}
+        ul,ol{margin:0px;padding:0px;list-style:none;}
+        a{color:#000;text-decoration:none;}
+        img{border:none;}
+        div{
+            /* 怪异盒模型 */
+            box-sizing: border-box;
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            margin: 30px;
+            background-color: #ccc;
+        }
+        section{
+            /* 内容盒模型 */
+            box-sizing: content-box;
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            margin: 30px;
+            background-color: #ddd;
+            
+        }
+      </style>
+</head>
+<body>
+    <div>
+        division = 分区
+    </div>
+    <section>
+        section=区域
+    </section>
+</body>
+</html>

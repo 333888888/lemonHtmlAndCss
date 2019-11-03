@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="copyrights" content="柠檬学院">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尺寸单位的玩法</title>
+    <style>
+        /* html{ */
+            /* border: 10px green solid; */
+            /* html是根标签，它的参照就是浏览器的视口viewport */
+            /* height: 50%; */
+        /* } */
+        body{
+            margin: 0;
+            /* border: 10px red solid; */
+            /* height: 50%; */
+        }
+        .box1{
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+        }
+        .box2{
+            width: 100%;
+            height: 50%;
+            background-color: cyan;
+        }
+        .box3{
+            /* 需求：希望这个box3盒子全屏呈现：参照就是viewport */
+            width: 100vw;
+            height: 50vh;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box1">box1</div> -->
+    <!-- <div class="box2">box2</div> -->
+    <div class="box3">box3</div>
+</body>
+</html>

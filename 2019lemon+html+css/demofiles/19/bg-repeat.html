@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>背景图的重复方式</title>
+    <style>
+    div{
+        width: 70vw;
+        height: 600px;
+        border: 1px red solid;
+        margin: 30px auto;
+        background-image: url(img/1.png);
+        background-repeat: repeat;/* x和Y轴向都重复，默认值*/
+        /* background-repeat: repeat no-repeat; */
+        /* background-repeat: repeat-y; */
+        /* background-repeat: no-repeat; */
+        /* space值的特点：
+        1、图片保持原有尺寸不变形
+        2、图片尺寸和容器尺寸之间如果有不匹配的情况，将多余的空间做一个留白处理；
+        3、留白区域存在于背景图和背景图之间
+         */
+        background-repeat: space;
+        /* round值的特点：
+        1、图片可能会变形=失真；
+        2、图片尺寸和容器尺寸之间可以通过计算实现精确匹配；
+        3、不存在留白空隙，图片完全覆盖容器区域
+         */
+        background-repeat: round;
+        background-repeat: round no-repeat;
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+</body>
+</html>

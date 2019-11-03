@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>清除浮动</title>
+    <!-- 
+        浮动会对页面内其他元素造成影响
+        对造成影响的元素使用clear:both;样式属性清除浮动元素对自身造成的影响.
+        一个元素内的子元素均使用浮动，没有清除浮动元素容易对父元素造成高度塌陷，一般使用伪元素清除浮动
+        .clearFloat:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        1.父元素内添加子元素清除浮动
+        2.父元素使用伪元素清除浮动
+    -->
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: #ffa500;
+        }
+        div:first-child{
+            float: left;
+        }
+        div:nth-child(2n){
+            float: right;
+            width: 400px;
+            height: 200px;
+            background-color: #00ffff;
+        }
+        div:nth-child(3n){
+            width: 600px;
+            height: 200px;
+            background-color: #ff00cc;
+            /* clear: both; */
+            /* clear: left; */
+            clear:right;
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

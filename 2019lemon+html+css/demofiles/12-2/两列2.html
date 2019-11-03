@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>两列布局：自适应在前，定宽在后</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    aside{
+        width: 300px;
+        background: orange;
+        margin-left: -300px;
+
+    }
+    div{
+        /* background: skyblue; */
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 100px;
+        padding-right: 300px;
+    }
+    section{
+        background: pink;
+        min-height: 300px;
+    }
+    aside,div{
+        float: left;
+    }
+
+    /* 
+    1、两列都必须浮动起来 = 脱离默认文档流
+    2、自适应主体区需要设定宽度 width = 100%
+    3、定宽的边栏区执行margin负值的操作，使其往上一行推移 -100% = 推移到行起点（左列）
+        -自身定宽值 = 推移到上行的末尾（右列）
+    4、自适应主体区在确保总宽度为100%的前提下（box-sizing转换），可以设置内部padding来控制内容呈现的区域   
+     */
+    </style>
+</head>
+
+<body>
+    <div>      
+        <section>
+                主体内容
+            main content
+        </section>
+    </div>
+    <aside>边栏</aside>    
+</body>
+</html>

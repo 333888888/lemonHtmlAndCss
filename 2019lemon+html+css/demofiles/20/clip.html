@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>背景裁切clip</title>
+    <style>
+    .box{
+        margin: 50px auto;
+        width: 500px;
+        height: 400px;
+        background-color: yellow;
+        background-image: url(img/1.png);
+        background-repeat: no-repeat;
+        padding: 100px;
+        border: 50px rgba(0, 0, 255, .5) dashed;
+        background-origin: border-box;
+        background-origin: content-box;
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>背景图的定位</title>
+    <style>
+    div{
+        width: 70vw;
+        height: 600px;
+        border: 1px red solid;
+        margin: 30px auto;
+        background-image: url(img/1.png);
+        background-repeat: no-repeat;
+         background-position: 20% center;
+         background-position: right top;
+/* 需求：背景图永远定位于右下角，且距离容器边缘有100px的距离 */
+        background-position:right 100px bottom ; 
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+</body>
+</html>

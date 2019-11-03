@@ -1,0 +1,40 @@
+/* 由外至内，由大至小 ————这样的一个定义思路 */
+body{
+    background-color: antiquewhite;
+    margin: 0;  /* 消除body标签默认存在的外边距 ，当数值为0的时候，单位是可以省略的 */
+}
+
+.maincon{
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 10px rgba(150, 0, 0, .3) solid;
+    width: 60vw;    /* 基准宽度的定义，这里宽度的设置可以随意使用%或者VW*/
+    min-width:500px ;   /* 通常从实际角度考虑各种情况发生，也可以给予一个最小或者最大的限定范围 */
+    /* margin-left:auto; */
+    /* margin-right: auto;  */
+    margin:30px auto;   /*这一句是常见的应用于主体内容横向居中处理的代码 */
+    padding: 30px;
+    font-size: 20px;
+    line-height: 2;
+    border-radius: 20px;       /* 圆角边框的设置 ：不影响我们的基础入门技能 */
+}
+
+.maincon h1{
+    font-size: 2em;
+    color: #900;
+}
+.maincon time{
+    color: rgba(0, 0, 0, .6)
+}
+.maincon > img{
+    width: 100%;
+}
+
+.maincon > header {
+    border-bottom: 1px dotted rgba(120, 120, 120, .7);
+}
+
+.maincon > footer {
+    border-top: 1px dotted rgba(120, 120, 120, .7);
+    padding-top: 20px;
+}

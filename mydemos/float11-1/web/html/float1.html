@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动布局</title>
+    <!-- 
+        浮动元素更inline-block元素的展示相似
+        浮动元素脱离文档流
+     -->
+     <style>
+         /*通配符选择器 选择页面所有元素 内边距和外边距都设置为0*/
+        *{margin:0px;padding:0px;}
+        /*自主选择标签进行初始化*/
+        body,p,dl,dd,h1,h2,h3,h4,h5,h6{margin:0px;}
+        ul,ol{margin:0px;padding:0px;list-style:none;}
+        a{color:#000;text-decoration:none;}
+        img{border:none;}		
+
+         div{
+            width: 300px;
+            height: 100px;
+            background-color: #ff0000;
+         }
+         div:nth-child(2){
+             float: left;
+             width: 200px;
+             height: 200px;
+         }
+         div:first-child{
+            float: left;
+            background-color: #00ff00;
+         }
+         div:last-child{
+            float: right;
+            background-color: #0000ff; 
+         }
+         div:first-child >img{
+             float: left;
+         }
+     </style>
+</head>
+<body>
+    
+    <div>
+        <img src="E:\imgs\head.png" alt="头像" height="100" width="80">
+        <ul>
+            <li><label for="pname">姓名:</label><span id="pname">张灵峰</span></li>
+            <li><label for="psex">性别:</label><span id="psex">男</span> </li>
+            <li><label for="prof">职业:</label> <span id="prof">JAVA工程师</span></li>
+            <li><label for="padd">地点:</label><span id="padd">浙江杭州</span></li>
+        </ul>
+    </div>
+    <div></div>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垂直对齐</title>
+    <style>
+        /*
+        垂直对齐:主要用于行内元素
+        与text-align不同的是：text-align主要是用于各个子元素
+        */
+        div,section,p{
+            line-height: 200px;
+            margin: 0px;
+            border: 1px solid #ccc;
+        }
+      
+        span{
+            background-color: #02f202;
+        }
+        strong{
+            font: bold normal 42px/1.3 Microsoft YaHei;
+            background-color: #ccc;
+
+        }
+        img{
+            background-color: #ffcc11;
+        }
+        div>span{ 
+            vertical-align: middle;
+        }
+        div>strong{ 
+            vertical-align: middle;
+        }
+        div>img{ 
+            vertical-align: middle;
+        }
+        section> strong,img,span{ 
+            vertical-align: baseline;
+        }
+        p>strong,img,span{ 
+            vertical-align: text-bottom;
+        }
+    </style>
+  
+</head>
+<body>
+    <div>
+        <span>家有喜事</span>
+        <strong>张国荣,周星驰</strong>
+        <img src="../img/homeHappy.jpg" alt="家有喜事" sizes="" srcset="">
+    </div>
+    <section>
+        <span>家有喜事</span>
+        <strong>张国荣,周星驰abcdefghijklmnopqrstuvwxyz</strong>
+        <img src="../img/homeHappy.jpg" alt="家有喜事" sizes="" srcset="">
+    </section>
+    <p>
+        <span>家有喜事</span>
+        <strong>张国荣,周星驰abcdefghijklmnopqrstuvwxyz</strong>
+        <img src="../img/homeHappy.jpg" alt="家有喜事" sizes="" srcset="">
+    </p>
+</body>
+</html>

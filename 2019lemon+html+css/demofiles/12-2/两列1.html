@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>两列布局：定宽在前，自适应在后</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    aside{
+        width: 300px;
+        background: orange;
+        float: right;
+    }
+    div{
+        background: skyblue;
+        min-height: 100px;
+        margin-right: 303px;
+    }
+    /* 
+    1、在前的边栏区设定float浮动
+    2、在后的主体区不浮动，利用其默认100%宽度的特性实现自适应
+    3、对主体区设定外边距，来推移主体区的宽度 = 外边距方向=边栏的浮动方向 + 外边距的距离 =>边栏的宽  
+     */
+    </style>
+</head>
+
+<body>
+    <aside>边栏</aside>
+    <div>主体内容</div>
+</body>
+</html>

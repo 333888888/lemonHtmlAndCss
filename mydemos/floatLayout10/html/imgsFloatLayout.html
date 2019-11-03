@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*通配符选择器 选择页面所有元素 内边距和外边距都设置为0*/
+        *{margin:0px;padding:0px;}
+        /*自主选择标签进行初始化*/
+        body,p,dl,dd,h1,h2,h3,h4,h5,h6{margin:0px;}
+        ul,ol{margin:0px;padding:0px;list-style:none;}
+        a{color:#000;text-decoration:none;}
+        img{border:none;}
+        body{
+            width: 676px;
+            margin: 10px auto;
+        }
+        body:after{
+            content: "";
+            display: block;
+            clear: left;
+        }
+        img:first-child,img:nth-child(4),img:nth-child(8),img:nth-child(9),img:nth-child(10){
+            float: left;
+        }
+        img:nth-child(3),img:nth-child(2),img:nth-child(5),img:nth-child(6),img:nth-child(7){
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="../img/logo.png" alt="logo">
+    <img src="../img/mainbanner02.jpg" alt="mainbanner02">
+    <img src="../img/mainbanner01.jpg" alt="mainbanner02">
+    <img src="../img/navigation.png" alt="">
+    <img src="../img/login.png" alt="">
+    <img src="../img/text02.png" alt="">
+    <img src="../img/text01.png" alt="">
+    <img src="../img/leftbanner.jpg" alt="">
+    <img src="../img/vote.png" alt="">
+    <img src="../img/footer.png" alt="">
+</body>
+</html>

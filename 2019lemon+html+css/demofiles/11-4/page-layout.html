@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>网页标题</title>
+    <style>
+    .mainbox{
+        width: 1200px;
+        margin: 30px auto;
+        border: 10px black solid;
+    }
+    .mainmenu{
+        height: 50px;
+        background: rebeccapurple;
+    }
+    .header{
+        min-height: 100px;
+        background: orange;
+    }
+    .content{
+        background: skyblue;
+        min-height: 500px;
+        width: 70%;
+        float: left;
+    }
+    .sidebar{
+        background: palevioletred;
+        min-height: 500px;
+        width: 30%;
+        float: left;
+    }
+    .footer{
+        min-height: 100px;
+        background: greenyellow;
+        clear: both;
+    }
+    .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox clearfix">
+        <section class="mainmenu">mainmenu</section>
+        <header class="header">header</header>
+        <section class="content">content</section>
+        <section class="sidebar">sidebar</section>
+        <!-- <footer class="footer">footer</footer> -->
+    </div>
+</body>
+</html>

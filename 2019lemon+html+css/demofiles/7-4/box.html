@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="copyrights" content="柠檬学院">
+    <title>盒子模型的计算</title>
+    <style>
+    .box1{
+        /* 默认的标准模式下，宽高的设定值代表的是盒子内部的content区域 >导致我们需要通过计算才能的到盒子自身的尺寸 */
+        box-sizing: content-box;
+
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        padding: 100px;
+        border: 20px red solid;
+        /* margin: -100px; */
+    }
+    .box2{
+        /* 需求:懒人不想去做计算，直接就设定盒子自身的尺寸 > 通过设定box-sizing来进行模式转换 */
+        box-sizing: border-box;
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+        padding: 100px;
+        border: 20px red solid;
+    }    
+
+    *{
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+
+<body>
+    12345
+    <div class="box1"></div>
+    <div class="box2"></div>
+    54321
+</body>
+</html>

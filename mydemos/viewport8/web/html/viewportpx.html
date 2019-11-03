@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>视口</title>
+    <!-- 这篇主要就是介绍单位 -->
+    <!-- 高度主要是是由内容决定的
+        html的高度相对于视口高度，视口也就是设备的可视化窗口
+        body的高度可以相对于html的高度
+        body内的元素相对于bod的高度
+    -->
+    <style type="text/css">
+        /*通配符选择器 选择页面所有元素 内边距和外边距都设置为0*/
+        *{margin:0px;padding:0px;}
+        /*自主选择标签进行初始化*/
+        body,p,dl,dd,h1,h2,h3,h4,h5,h6{margin:0px;}
+        ul,ol{margin:0px;padding:0px;list-style:none;}
+        a{color:#000;text-decoration:none;}
+        img{border:none;}
+        html{
+            border: 1px green solid ;
+            height: 50%;
+        }
+        body{
+            border: 1px red solid;
+            height: 50%;  
+        }
+        .box1{
+            width:330px;
+            height:50%;
+            background-color:pink;
+        }
+        .box2{
+            width:330px;
+            height:50%;
+            background-color:cyan;
+        }
+        .box3{
+            width:100vw;
+            height:40vh;
+            background-color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+</body>
+</html>

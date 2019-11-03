@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>好看的复选框模拟演示</title>
+    <style>
+    div{
+        padding-top: 100px;
+        text-align: center;
+    }
+    #che{
+        display: none;
+    }
+    /* 未被选择的状态 */
+    #che + label{
+        display: inline-block;
+        border: 1px #dddddd solid;
+        background: url(img/bg0.png) no-repeat 12px;
+        color:  rgb(109, 109, 109);
+        font-size: 2em;
+        padding: 10px 20px;
+        padding-left: 60px;
+        border-radius: 5px;
+    }
+    /* 被选择的状态 */
+    #che:checked  + label{
+        display: inline-block;
+        border: 1px rgb(0, 150, 136) solid;
+        background: url(img/bg1.png) no-repeat 12px;
+        color:  rgb(0, 150, 136);
+        font-size: 2em;
+        padding: 10px 20px;
+        padding-left: 60px;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<!-- 
+    思路：
+    1、创建一个美观的元素用来模拟（替代）真正的复选控件
+    2、选择和控件本身就具有关联性的<label>对象最合适
+    3、需要为这个美观元素制定2种样式效果，分别去对应控件操作的2种状态
+    4、以控件的选择状态作为选择符对象的前提条件
+        当input 未选中时 ====  label{}
+        当input 选中时 ====  label{}
+        补充知识点：
+        
+        1、兄弟选择符类型 A ~ B 、 A + B
+        2、选中状态 = 【:checkd】伪类
+ -->
+<body>
+    <div>
+        <input type="checkbox" id="che">
+        <label for="che">同意注册协议</label>
+    </div>
+</body>
+</html>

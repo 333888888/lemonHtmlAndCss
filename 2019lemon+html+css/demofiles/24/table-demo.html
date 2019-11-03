@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表格演示</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+
+    table{
+        font-family:Verdana, sans-serif;
+        font-size: 18px;
+        width: 65vw;
+        margin: 50px auto;
+        border-collapse: collapse;
+    }
+    table,td,th{
+        border: 1px white solid;
+    }
+    td,th{
+        padding: 10px;
+        text-align: center;
+    }
+    .first-td{
+        width: 300px;
+    }
+    thead{
+        background-color:skyblue;
+    }
+    tbody{
+        background-color: #dedede;
+    }
+    thead th,tbody th{
+        background-color: rgb(114, 192, 255);
+    }
+    tfoot tr{
+        background-color: yellowgreen;
+    }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="first-td">main mode</th>
+                <th colspan="4">area of workplace</th>
+            </tr>
+            <tr>
+                <td>表头1</td>
+                <td>表头2</td>
+                <td>表头3</td>
+                <td>表头4</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>area of wor of workplace</th>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>total</td>
+                <td>22</td>
+                <td>33</td>
+                <td>44</td>
+                <td>55</td>
+            </tr>           
+        </tfoot>
+    </table>
+</body>
+</html>

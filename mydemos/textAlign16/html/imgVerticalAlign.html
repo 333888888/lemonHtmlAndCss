@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两张图片对齐方式</title>
+    <style>
+        /*
+        两张图片垂直对齐方向上默认是baseline
+        这会使图片下方有默认的留白
+        */
+        div{
+            border: 1px solid red;
+        }
+        div>img{
+            border: 1px solid green ;
+        }
+        section{
+            border: 1px solid red;
+            font-size: 0px;
+        }
+        p{
+            margin: 0px;
+            font-size: 24px;
+            border: 1px solid red;
+        }
+        p>img,span{
+            vertical-align:text-bottom;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../img/homeHappy.jpg" alt="家有喜事">
+        <img src="../img/homeHappy.jpg" alt="家有喜事">
+        <span>abcdefghijklmnopqrstuvwxyz</span>
+    </div>
+    <section>
+        <img src="../img/homeHappy.jpg" alt="家有喜事">
+        <img src="../img/homeHappy.jpg" alt="家有喜事">
+        <span>abcdefghijklmnopqrstuvwxyz</span>
+    </section>
+    <p>
+        <img src="../img/homeHappy.jpg" alt="家有喜事">
+        <img src="../img/homeHappy.jpg" alt="家有喜事">
+        <span>abcdefghijklmnopqrstuvwxyz</span> 
+    </p>
+</body>
+</html>

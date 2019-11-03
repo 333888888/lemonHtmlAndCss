@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>三列：自适应列在前、定宽列在后</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    .left,.right{
+        width: 200px;
+        background: pink;
+        min-height: 300px;
+    }
+    .right{
+        background: seagreen;
+    }
+    .main{
+        min-height: 400px;
+        /* background: purple; */
+    }
+    .left,.right,.main{
+        float: left;
+    }
+    .main{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 200px;
+    }
+    .left{
+        margin-left: -100%;
+    }
+    .right{
+        margin-left: -200px;
+    }
+    .main section{
+        background: purple;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <section>
+        <h1>title</h1>
+        <h1>title</h1>
+        <h1>title</h1>
+        <h1>title</h1>
+        <h1>title</h1>
+        <h1>title</h1>
+        <h1>title</h1>
+    </section>
+
+
+    </div>
+    <aside class="left">left</aside>
+    <aside class="right">right</aside>    
+</body>
+</html>

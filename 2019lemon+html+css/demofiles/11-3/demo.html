@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>父级塌陷现象</title>
+    <style>
+    .mainbox{
+        border: 3px red solid;
+    }
+    .content{
+        border: 3px green solid;
+        width: 60%;
+        float: left;
+    }
+    .sidebar{
+        border: 3px orange solid;
+        width: 38%;
+        float: left;
+    }
+    /* .bom{
+        clear: both;
+    } */
+
+/* 创建一个css中的伪对象类  =  在clearfix对象的内容最后创建一个假的对象after，这个假对象默认的显示模式是inline类型 */
+    .clearfix::after{
+        content: "";    /* 定义伪元素所必须设置的内容属性，就算值是空的也不可以省略 */
+        display: block; /* 让这个假元素默认就独占一行 */
+        clear: both;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox clearfix">
+        <section class="content">content
+            <h1>title11111</h1>
+        
+
+        </section>
+        <section class="sidebar">sidebar</section>
+        <!-- <section class="bom"></section> -->
+    </div>
+    <div class="mainbox clearfix">
+            <section class="content">content
+                <h1>title11111</h1>
+            
+    
+            </section>
+            <section class="sidebar">sidebar</section>
+            <!-- <section class="bom"></section> -->
+        </div>
+        <div class="mainbox clearfix">
+                <section class="content">content
+                    <h1>title11111</h1>
+                
+        
+                </section>
+                <section class="sidebar">sidebar</section>
+                <!-- <section class="bom"></section> -->
+            </div> <div class="mainbox clearfix">
+                    <section class="content">content
+                        <h1>title11111</h1>
+                    
+            
+                    </section>
+                    <section class="sidebar">sidebar</section>
+                    <!-- <section class="bom"></section> -->
+                </div>
+</body>
+</html>

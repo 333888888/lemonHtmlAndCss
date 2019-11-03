@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="copyrights" content="柠檬学院">
+    <title>导航条</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        nav{
+            background-color: #f54343;
+            height: 48px;
+            margin-top: 50px;
+        }
+        nav > div{
+            /* background-color: pink; */
+            width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+        }
+        nav a{
+            box-sizing: border-box;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;  /* 取消超级链接默认带有的下划线 */
+            background-color: black;
+            /* ????下面的属性无效？ */
+            width: 120px; 
+            height: 100%; 
+            border: 10px yellowgreen solid;
+            padding: 20px;
+            /* 存在的问题：部分html标签在默认情况下，不能正确的去呈现盒模型，盒模型的属性无效？  */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="http://#">资讯</a>
+            <a href="http://#">视频</a>
+            <a href="http://#">直播</a>
+            <a href="http://#">财经</a>
+            <a href="http://#">娱乐</a>
+            <a href="http://#">体育</a>
+            <a href="http://#">文化</a>
+            <a href="http://#">时尚</a>
+            <a href="http://#">文化</a>
+            <a href="http://#">时尚</a>           
+        </div>
+    </nav>
+</body>
+</html>

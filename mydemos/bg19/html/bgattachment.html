@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景附着</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            height: 100vh;
+            background-color: #ccc;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+        div:nth-child(1){
+            background-image: url(../img/f1.jpg);
+        }
+
+        div:nth-child(3){
+            background-image: url(../img/b2.jpg);
+        }
+        div:nth-child(5){
+            background-image: url(../img/c3.jpg);
+        }
+        div:nth-child(7){
+            background-image: url(../img/d4.jpg);
+        }
+        div:nth-child(2),div:nth-child(4),div:nth-child(6){
+            width: 100vw;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

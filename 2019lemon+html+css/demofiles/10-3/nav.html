@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>横向导航条案例演示</title>
+    <style>
+    nav{
+        background-color: rgb(245, 67, 67);
+        color: white;
+        height: 42px;
+        text-align: center;
+        font-size: 0;
+    }
+    nav a{
+        display: inline-block;;
+        color: white;
+        /* background: black; */
+        height: 42px;
+        line-height: 42px;
+        padding: 0 20px;
+        border-left: 1px solid rgba(255, 255, 255, .3);
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        font-size: initial;
+    }
+    
+    </style>
+</head>
+<!-- 
+1、创建html元素
+2、css盒模型呈现
+3、css排版
+ -->
+
+
+ <!-- inline-block布局的缝隙处理 -->
+ <!-- 
+1、缝隙是由代码的换行操作而引起的；
+2、代码换行(回车) > 带来空白位置 = 空白字符 = 受到文字设定的影响[字号的设定font-size] 
+3、对inline-block元素的父级对象设定字号控制【font-size:0;】  ===  缝隙消除
+4、对inline-block元素自身重设字号
+
+
+
+  -->
+<body>
+    <nav>
+        <a href="">资讯</a>
+        <a href="">资讯</a>
+        <a href="">资讯</a>
+        <a href="">资讯</a>
+        <a href="">资讯</a>
+        <a href="">资讯</a>
+        <a href="">资讯</a>
+        <a href="">资讯</a>
+        <a href="">资讯</a>
+        <a href="">资讯</a>
+    </nav>
+</body>
+</html>
